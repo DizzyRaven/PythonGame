@@ -2,5 +2,17 @@ from Weapons import *
 from Warriors import *
 
 
-orc2 = Orc(axe2, 'Lolik')
-axe2 = Axe()
+
+sword = Sword()
+human = Human(sword,"Ilya")
+
+print (human)
+
+print (human.kick())
+print (human.kick())
+print (human.kick())
+orc1 = Orc(axe1, 'Lolik')
+axe1 = Axe()
+
+
+
