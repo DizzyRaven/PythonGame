@@ -8,3 +8,5 @@ human = Human(sword,"Ilya")
 print (human)
 
 print (human.kick())
+print (human.kick())
+print (human.kick())
