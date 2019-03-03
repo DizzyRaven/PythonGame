@@ -27,6 +27,9 @@ class Axe(Weapon):
         else:
             return self.max_damage
 
+class Bow(Weapon):
+    def __init__(self):
+        super(Bow, self).__init__()
 
 
 
