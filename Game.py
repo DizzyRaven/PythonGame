@@ -10,3 +10,6 @@ print (human)
 print (human.kick())
 print (human.kick())
 print (human.kick())
+orc1 = Orc(axe1, 'Lolik')
+axe1 = Axe()
+
