@@ -6,3 +6,5 @@ sword = Sword()
 human = Human(sword,"Ilya")
 
 print (human)
+
+print (human.kick())
