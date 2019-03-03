@@ -7,4 +7,4 @@ human = Human(sword,"Ilya")
 
 print (human)
 
-print (human)
+print (human.kick())

@@ -9,6 +9,12 @@ class Weapon:
     def get_damage(self):
         return randint(self.min_damage, self.max_damage)
 
+class Sword(Weapon):
+    def __init__(self):
+        super(Sword, self).__init__(5,7)
+
+    def get_damage(self):
+        return super(Sword, self). get_damage()
 
 class Axe(Weapon):
     def __init__(self):
@@ -20,6 +26,8 @@ class Axe(Weapon):
             return self.min_damage
         else:
             return self.max_damage
+
+
 
 
 
