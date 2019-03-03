@@ -11,6 +11,8 @@
     <OutputPath>.</OutputPath>
     <Name>Game</Name>
     <RootNamespace>Game</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,16 +24,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game.py" />
-    <Compile Include="Warriors\WarriorBase.py">
+    <Compile Include="Warriors.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Weapons\WeaponBase.py">
+    <Compile Include="Weapons.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Weapons\" />
-    <Folder Include="Warriors\" />
+    <InterpreterReference Include="Global|PythonCore|3.6" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

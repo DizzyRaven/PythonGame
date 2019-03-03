@@ -1,2 +1,8 @@
+from Weapons import *
+from Warriors import *
 
-print("test")
+
+sword = Sword()
+human = Human(sword,"Ilya")
+
+print (human)
