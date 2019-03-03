@@ -11,6 +11,11 @@ class WarriorBase:
     def __str__(self):
         return f"Name: {self.name}\nHP: {self.hp}\nRace: {type(self).__name__}\nWeapon: {type(self.weapon).__name__}"
 
+class Elf(WarriorBase):
+    def __init__(self):
+        super(Elf, self).__init__(weapon, name)
+        self.hp = self.hp - 10
+        
 class Orc(WarriorBase):
 
     def __init__(self, weapon, name):
@@ -27,5 +32,3 @@ class Human(WarriorBase):
 
     def kick(self):
         return self.weapon.get_damage()*1.2
-
-
