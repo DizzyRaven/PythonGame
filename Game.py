@@ -1,2 +1,9 @@
+from Warriors import *
+from Weapons import *
 
-print("test")
+
+axe = Axe()
+
+orc = Orc(axe, 'Alina')
+
+print(orc.kick())
