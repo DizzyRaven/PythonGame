@@ -9,16 +9,17 @@ class Weapon:
     def get_damage(self):
         return randint(self.min_damage, self.max_damage)
 
-class Sword(Weapon):
-    def __init__(self):
-        super(Sword, self).__init__(5, 7)
 
+class Axe(Weapon):
+    def __init__(self):
+        super(Axe, self).__init__(2, 10)
 
     def get_damage(self):
-       baseDamage=  super(Sword, self).get_damage()
-       random = randint(0,100)
-       if random<11 :
-           return baseDamage*2
-       else:
-           return baseDamage
+        rand = randint(1, 2)
+        if rand == 1:
+            return self.min_damage
+        else:
+            return self.max_damage
+
+
 
