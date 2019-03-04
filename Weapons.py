@@ -29,7 +29,8 @@ class Axe(Weapon):
 
 class Bow(Weapon):
     def __init__(self):
-        super(Bow, self).__init__()
+        super(Bow, self).__init__(4, 9)
+    
 
 
 

@@ -15,7 +15,10 @@ class Elf(WarriorBase):
     def __init__(self):
         super(Elf, self).__init__(weapon, name)
         self.hp = self.hp - 10
-        
+
+    def kick(self):
+        return self.weapon.get_damage() * 1.3
+    
 class Orc(WarriorBase):
 
     def __init__(self, weapon, name):
